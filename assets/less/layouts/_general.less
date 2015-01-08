@@ -1,0 +1,41 @@
+// Content wrapper
+.wrap {  background: url(../img/sheet.jpg) no-repeat fixed;
+   -webkit-background-size: cover;
+   padding-bottom: 50px; }
+
+// Main content area
+.main {
+  .make-sm-column(@main-sm-columns);
+  .sidebar-primary & {
+    .make-sm-column(@main-sm-columns - @sidebar-sm-columns);
+  }
+}
+
+//Content
+.panel-default>.panel-heading {
+color: #333;
+background-color: #b4b2ae;
+border-color: transparent;
+}
+
+body.admin-bar {
+    .navbar-fixed-top {
+        // reserve space for the admin bar
+        top: 32px !important;
+    }
+}
+body,html {
+    width: 100%;
+    height: 100%;
+}
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+.home .main {
+   padding: 0;
+}
+
+.padding {padding: 0 15px;}
+
+a { color: #E87162}

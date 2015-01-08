@@ -1,0 +1,74 @@
+.navbar-default {
+    background-color: #b4b2ae;
+    border-color: darken(hsl(40, 4%, 69%), 10%);
+    .navbar-nav {
+        & > li {
+            & > a {
+                color: #5F5E5D;
+            }
+        }
+    }
+    .navbar-brand {
+        color: #5F5E5D;
+    }
+}
+
+.banner { }
+
+.page-header {
+margin: 75px 0 20px !important;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+.intro-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/walko2.jpg) no-repeat fixed;
+background-color: #151419;
+-webkit-background-size: cover;
+    margin-top: -2em;
+     @media(max-width: 767px) {
+        height: 500px;
+        margin-top: inherit;
+    }
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { height: 500px;
+        margin-top: inherit; }
+    @media(min-width: @screen-md-min) and (max-width: @screen-md-max){
+        height: 500px;
+        margin-top: inherit;
+    }
+}
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    & > h1 {
+        margin: 0;
+        color: #fff;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 5em;
+        @media(max-width: 767px) {
+    	font-size: 3em;
+    }
+    }
+    & > h3 {
+        color: #fff;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    }
+    @media(max-width: 767px) {
+    	padding-bottom: 15%;
+    }
+}
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    @media(max-width: 767px) {
+    	  width: 100%;
+    }
+}
