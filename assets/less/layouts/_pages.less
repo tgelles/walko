@@ -1,3 +1,95 @@
 .container.page {
 background: rgba(255,255,255, 0.95);
 }
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.isotope {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  .isotope-item {
+    /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+  }
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+#fields_search fieldset {
+  padding-bottom: 30px;
+  border: none;
+}
+
+#field_search {
+  font-family: "Myriad W01 SmBd", Arial, sans-serif;
+  color: #FFF;
+  font-size: 16px;
+  label {
+    font-family: "Myriad W01 SmBd", Arial, sans-serif;
+    color: #FFF;
+    font-size: 16px;
+    margin-top: 6px;
+    display: inline;
+  }
+}
+
+#fields_search input {
+  &[type="text"] {
+    height: 56px;
+    margin-bottom: 10px;
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -moz-border-radius-topright: 7px;
+    -moz-border-radius-bottomright: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: inline;
+    float: left;
+    width: 83%;
+    background: #666;
+    color: #ccc;
+    font-family: "Myriad W01 It";
+    font-size: 16px;
+    border: none;
+  }
+  &[type="submit"] {
+    background: #333;
+    height: 56px;
+    width: 45px;
+    font-family: 'flagship-icon';
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-topleft: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    font-size: 26px;
+    border: none;
+    float: left;
+    padding: 0;
+    color: #ccc;
+  }
+}
